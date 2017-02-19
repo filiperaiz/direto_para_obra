@@ -1,0 +1,75 @@
+<ion-view view-title="Faça seu cadastro" hide-nav-bar="false" ng-controller="LoginCtrl">
+    <ion-content class="bg-form" scroll="true">
+        <div class="form-app">
+            <div class="list form-sign">
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="Nome e sobrenome">
+                </label>
+
+                <label class="item-input">
+                    <input type="email" class="input-form" placeholder="Email">
+                </label>
+
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="CPF">
+                </label>
+
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="Endereço">
+                </label>
+
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="Cidade">
+                </label>
+
+                <label class="item-input item-select select">
+                    <select class="select-form">
+                      <option>Estado</option>
+                      <option>SP</option>
+                      <option>RJ</option>
+                      <option>DF</option>
+                      <option>CE</option>
+                      <option>PI</option>
+                    </select>
+                </label>
+
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="CEP">
+                </label>
+
+                <label class="item-input">
+                    <input type="tel" class="input-form" placeholder="Telefone">
+                </label>
+
+                <label class="item-input">
+                    <input type="password" class="input-form" placeholder="Senha">
+                </label>
+
+                <label class="item-input">
+                    <input type="password" class="input-form" placeholder="Confirmação de senha">
+                </label>
+            </div>
+        </div>
+
+        <div class="btns-begin">
+            <button class="button button-positive" ng-click="begin()">Cadastrar</button>
+        </div>
+
+        <div class="btns-social">
+            <div class="division"><span>Ou conecte-se com</span></div>
+            <button type="button" class="button button-facebook" ng-click="enter()">
+                <!-- <i class="icon-arrow ion-social-facebook"></i> -->
+                Facebook
+            </button>
+
+            <button type="button" class="button button-google" ng-click="enter()">
+                <!-- <i class="icon-arrow ion-ios-arrow-forward"></i> -->
+                Google
+            </button>
+        </div>
+
+        <div class="privacy">
+            <p>Ao se cadastrar você estará de acordo com nosso <a href="">Termo de Uso e Política de Privacidade.</a></p>
+        </div>
+    </ion-content>
+</ion-view>

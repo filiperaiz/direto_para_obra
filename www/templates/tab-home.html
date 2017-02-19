@@ -1,0 +1,104 @@
+<ion-view view-title="Home">
+    <ion-nav-title>
+        <img class="logo-title" src="img/icon/logo.png">
+    </ion-nav-title>
+    <ion-content class="bg-content">
+        <div class="slidebox">
+            <ion-slide-box show-pager="true" on-slide-changed="slideChanged(index)">
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="row">
+                            <div class="col">
+                                <div class="picture">
+                                    <a class="link-item" ng-href="#/tab/home/product-detail">
+                                        <img src="img/produto1.png" width="300" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col col-60">
+                                <div class="infos">
+                                    <p class="product-name">Carrinho de Mão fasfas   afas</p>
+                                    <div class="box-price">
+                                        <span>de R$122,90 por</span>
+                                        <p class="price">R$89,90</p>
+                                    </div>
+                                    <a class="button button-energized" ng-href="#/tab/home/product-detail">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="row">
+                            <div class="col">
+                                <div class="picture">
+                                    <a class="link-item" ng-href="#/tab/home/product-detail">
+                                        <img src="img/produto2.png" width="300" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col col-60">
+                                <div class="infos">
+                                    <p class="product-name">Carrinho de Mão</p>
+                                    <div class="box-price">
+                                        <span>de R$122,90 por</span>
+                                        <p class="price">R$89,90</p>
+                                    </div>
+                                    <a class="button button-energized" ng-href="#/tab/home/product-detail">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="row">
+                            <div class="col">
+                                <div class="picture">
+                                    <a class="link-item" ng-href="#/tab/home/product-detail">
+                                        <img src="img/produto3.png" width="300" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col col-60">
+                                <div class="infos">
+                                    <p class="product-name">Carrinho de Mão</p>
+                                    <div class="box-price">
+                                        <span>de R$122,90 por</span>
+                                        <p class="price">R$89,90</p>
+                                    </div>
+                                    <a class="button button-energized" ng-href="#/tab/home/product-detail">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+
+        <div class="box-products list-products">
+            <div class="item-product-list" ng-repeat="item in items">
+                <div class="picture">
+                    <a class="link-item" ng-href="#/tab/home/product-detail">
+                        <img src="img/produto2.png" width="300" alt="">
+                    </a>
+                </div>
+
+                <div class="infos">
+                    <p class="product-name">Cimento Votoram Obras Estruturais Saco de 50kg</p>
+                    <p class="product-refer">ref. 00001</p>
+                    <div class="box-price">
+                        <span>de R$22,90</span>
+                        <p class="price">R$19,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

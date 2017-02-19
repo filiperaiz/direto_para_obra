@@ -1,0 +1,38 @@
+<ion-view view-title="Carrinho">
+    <ion-content class="bg-content box-price-cart">
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="item in items" type="item-text-wrap">
+                <img src="img/produto2.png" width="300" alt="">
+                <div class="product-detail item-product-cart">
+                    <div class="infos">
+                        <span class="category">cimento</span>
+                        <p class="product-name">Cimento Votoran Obras Estruturais Saco de 50Kg</p>
+                        <p class="product-refer">ref. 00002</p>
+                        <div class="box-price">
+                            <span>de R$27,90</span>
+                            <p class="price">R$22,90</p>
+                        </div>
+                    </div>
+                    <div class="form-app product-cart-select">
+                        <label class="item-input item-select select">
+                        Quantidade
+                            <select class="select-form">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+            </ion-item>
+        </ion-list>
+
+
+    </ion-content>
+       <!--  <div class="box-total-cart">
+            <a class="button button-energized" ng-click="showConfirm()">Comprar</a>
+        </div> -->
+</ion-view>

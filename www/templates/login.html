@@ -1,0 +1,42 @@
+<ion-view view-title="Login" hide-nav-bar="false" ng-controller="LoginCtrl">
+    <ion-content class="bg-form" scroll="true">
+        <div class="big-logo">
+            <img src="img/icon/logo_block.png">
+        </div>
+        <div class="form-app">
+            <div class="list">
+                <label class="item-input">
+                    <input type="text" class="input-form" placeholder="Usuário">
+                </label>
+                <label class="item-input">
+                    <input type="password" class="input-form" placeholder="Senha">
+                </label>
+            </div>
+
+            <div class="forgot-password">
+                <button type="button" class="button button-clear button-register" ng-click="enter()">
+                    Esqueceu sua senha?
+                </button>
+            </div>
+        </div>
+
+        <div class="btns-begin">
+            <button class="button button-positive" ng-click="enter()">Entrar</button>
+        </div>
+
+        <div class="btns-social">
+            <div class="division"><span>Ou conecte-se com</span></div>
+            <button type="button" class="button button-facebook" ng-click="enter()">
+                Facebook
+            </button>
+
+            <button type="button" class="button button-google" ng-click="enter()">
+                Google
+            </button>
+        </div>
+
+        <div class="privacy">
+            <p>Ao se cadastrar você estará de acordo com nosso <a href="">Termo de Uso e Política de Privacidade.</a></p>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,60 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Detalhes do produto">
+    <ion-content class="bg-content">
+        <div class="slidebox">
+            <ion-slide-box show-pager="true" on-slide-changed="slideChanged(index)">
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="picture">
+                            <img src="img/produto2.png" width="300" alt="">
+                        </div>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="picture">
+                            <img src="img/produto3.png" width="300" alt="">
+                        </div>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="slide-product">
+                        <div class="picture">
+                            <img src="img/produto4.png" width="300" alt="">
+                        </div>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+
+        <div class="product-detail">
+            <div class="infos">
+                <span class="category">cimento</span>
+                <p class="product-name">Cimento Votoran Obras Estruturais Saco de 50Kg</p>
+                <p class="product-refer">ref. 00002</p>
+                <div class="box-price">
+                    <span>de R$27,90</span>
+                    <p class="price">R$22,90</p>
+                </div>
+            </div>
+
+            <div class="box-buy">
+                <a class="button button-energized" ng-click="showConfirm()">Comprar</a>
+                <a class="button button-positive button-outline" ng-href=""><i class="ion-heart"></i>Salvar na lista de favoritos</a>
+            </div>
+
+            <div class="description">
+                <h5>Detalhes do produto</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia adipisci suscipit provident placeat voluptas libero pariatur incidunt, necessitatibus dolore quibusdam molestias laborum voluptatum modi illo porro nulla nobis ex nesciunt.</p>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
