@@ -22,6 +22,10 @@ angular.module('starter.controllers', [])
         $state.go('perfil-pj');
     };
 
+    $scope.forgotPassword = function() {
+        $state.go('forgot-password');
+    };
+
     $scope.enter = function() {
         $state.go('tab.home');
     };
@@ -42,6 +46,7 @@ angular.module('starter.controllers', [])
         { id: 5 }
     ];
 })
+
 
 .controller('ProductDetailCtrl', function($scope, $ionicSlideBoxDelegate, $ionicPopup) {
 
@@ -69,9 +74,9 @@ angular.module('starter.controllers', [])
                 }
             }]
         });
-
     };
 })
+
 
 .controller('SearchCtrl', function($scope) {
     $scope.items = [
@@ -83,6 +88,7 @@ angular.module('starter.controllers', [])
         { id: 5 }
     ];
 })
+
 
 .controller('CategoryCtrl', function($scope) {
     $scope.items = [
@@ -105,21 +111,64 @@ angular.module('starter.controllers', [])
         {
             id: 4,
             name: 'Ferramentas'
+        },
+        {
+            id: 5,
+            name: 'Serviços'
+        },
+        {
+            id: 6,
+            name: 'Porcelanatos, pisos e revestimentos'
+        },
+        {
+            id: 7,
+            name: 'Louças e Metais'
+        },
+        {
+            id: 8,
+            name: 'Tintas'
+        },
+        {
+            id: 9,
+            name: 'Luminárias, interruptores e tomadas'
+        },
+        {
+            id: 10,
+            name: 'Portas e janelas'
+        },
+        {
+            id: 11,
+            name: 'Decoração e utilidades'
         }
+
     ];
 })
 
-.controller('CartCtrl', function($scope) {
+
+.controller('CartCtrl', function($scope, $state, $ionicPopup) {
+
     $scope.items = [
         { id: 0 },
         { id: 1 },
         { id: 2 }
     ];
+
+    $scope.showConfirm = function() {
+        $ionicPopup.show({
+            title: 'Código de desconto',
+            template: 'Seu código de desconto foi ativado com sucesso.',
+            buttons: [{
+                text: 'Ok',
+                type: 'button-positive',
+                onTap: function(e) {
+
+                }
+            }]
+        });
+    };
+
+
 })
-
-
-
-
 
 .controller('PerfilCtrl', function($scope, $state) {
     $scope.logout = function() {

@@ -1,0 +1,47 @@
+<ion-view view-title="Finalizar compra">
+    <ion-content class="bg-content box-price-cart"  scroll="true" >
+        <div class="steps-checkout">
+            <span class="first active">Endereço</span>
+            <span class="middle active">Pagamento</span>
+            <span class="last">Confirmação</span>
+        </div>
+
+        <div class="box-widget">
+            <h2 class="title-header">Selecionar forma de pagamento</h2>
+            <a class="item item-icon-right" href="#/tab/cart/cart-newcard">
+                Novo Cartão de crédito
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </a>
+            <a class="item item-icon-right" href="#">
+                Boleto bancário
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </a>
+        </div>
+
+        <div class="box-widget">
+            <h2 class="title-header">Código de desconto</h2>
+            <div class="infos clearfix">
+                <label class="item-input item-check">
+                    <input type="text" class="input-form " placeholder="Digite o código">
+                </label>
+                <a class="button button-positive" ng-click="showConfirm()">Ativar</a>
+            </div>
+        </div>
+
+
+
+
+    </ion-content>
+
+    <div class="box-total-cart">
+        <div class="info-price clearfix">
+            <div class="label-price">Total</div>
+            <div class="box-total-price">
+                <p class="value">R$45,80</p>
+                <span class="parcels">ou até 2x de R$ 22,90</span>
+            </div>
+        </div>
+        <a class="button button-positive" ng-href="#/tab/cart/cart-confirm">Continuar</a>
+    </div>
+
+</ion-view>

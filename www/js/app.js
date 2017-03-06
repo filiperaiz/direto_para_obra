@@ -23,6 +23,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     });
 })
 
+
+
+
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     $ionicConfigProvider.tabs.position('bottom');
 
@@ -57,10 +60,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/perfil-pj.html'
     })
 
-    // .state('forgot-password', {
-    //     url: '/forgot-password',
-    //     templateUrl: 'templates/forgot-password.html'
-    // })
+    .state('forgot-password', {
+        url: '/forgot-password',
+        templateUrl: 'templates/forgot-password.html'
+    })
 
 
 
@@ -106,6 +109,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
+    .state('tab.result-category', {
+        url: '/category/result-category',
+        views: {
+            'tab-category': {
+                templateUrl: 'templates/result-category.html',
+                controller: 'CategoryCtrl'
+            }
+        }
+    })
+
 // tab search
     .state('tab.search', {
         url: '/search',
@@ -137,7 +150,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
-// tab category
+// tab cart
     .state('tab.cart', {
         url: '/cart',
         views: {
@@ -148,6 +161,57 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
+    .state('tab.cart-address', {
+        url: '/cart/cart-address',
+        views: {
+            'tab-cart': {
+                templateUrl: 'templates/cart-address.html',
+                controller: 'CartCtrl'
+            }
+        }
+    })
+
+        .state('tab.cart-newaddress', {
+            url: '/cart/cart-newaddress',
+            views: {
+                'tab-cart': {
+                    templateUrl: 'templates/cart-newaddress.html',
+                    controller: 'CartCtrl'
+                }
+            }
+        })
+
+    .state('tab.cart-payment', {
+        url: '/cart/cart-payment',
+        views: {
+            'tab-cart': {
+                templateUrl: 'templates/cart-payment.html',
+                controller: 'CartCtrl'
+            }
+        }
+    })
+
+        .state('tab.cart-newcard', {
+            url: '/cart/cart-newcard',
+            views: {
+                'tab-cart': {
+                    templateUrl: 'templates/cart-newcard.html',
+                    controller: 'CartCtrl'
+                }
+            }
+        })
+
+    .state('tab.cart-confirm', {
+        url: '/cart/cart-confirm',
+        views: {
+            'tab-cart': {
+                templateUrl: 'templates/cart-confirm.html',
+                controller: 'CartCtrl'
+            }
+        }
+    })
+
+// tab perfil
     .state('tab.perfil', {
         url: '/perfil',
         views: {

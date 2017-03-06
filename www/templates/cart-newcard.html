@@ -1,0 +1,42 @@
+<ion-view view-title="Novo cartão de crédito">
+    <ion-content class="bg-content box-price-cart address padding-top-20" scroll="true">
+        <div class="box-widget">
+            <h2 class="title-header">Novo cartão de crédito</h2>
+            <div class="form-app form-float">
+                <div class="list">
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Número do cartão de crédito</span>
+                        <input type="tel" placeholder="Número do cartão de crédito">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Nome do titular(como aparece no cartão)</span>
+                        <input type="text" placeholder="Nome do titular(como aparece no cartão)">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">MM/AA (Validade)</span>
+                        <input type="tel" placeholder="MM/AA (Validade)">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Código de segurança</span>
+                        <input type="tel" placeholder="Código de segurança">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-widget">
+            <div class="item item-toggle">
+                 Salvar cartão para compras futuras
+                 <label class="toggle">
+                   <input type="checkbox">
+                   <div class="track">
+                     <div class="handle"></div>
+                   </div>
+                 </label>
+              </div>
+        </div>
+    </ion-content>
+    <div class="box-total-cart">
+        <a class="button button-positive" ng-href="#/tab/cart/cart-address">Salvar</a>
+    </div>
+</ion-view>

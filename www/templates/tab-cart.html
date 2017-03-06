@@ -1,5 +1,5 @@
 <ion-view view-title="Carrinho">
-    <ion-content class="bg-content box-price-cart">
+    <ion-content class="bg-content box-price-cart"  scroll="true" >
         <ion-list>
             <ion-item class="item-thumbnail-left" ng-repeat="item in items" type="item-text-wrap">
                 <img src="img/produto2.png" width="300" alt="">
@@ -29,10 +29,19 @@
 
             </ion-item>
         </ion-list>
-
-
     </ion-content>
-       <!--  <div class="box-total-cart">
-            <a class="button button-energized" ng-click="showConfirm()">Comprar</a>
-        </div> -->
+
+    <div class="box-total-cart">
+        <div class="info-price clearfix">
+            <div class="label-price">Total</div>
+            <div class="box-total-price">
+                <p class="value">R$45,80</p>
+                <span class="parcels">ou até 2x de R$ 22,90</span>
+            </div>
+        </div>
+
+        <a class="button button-positive" ng-href="#/tab/cart/cart-address">Comprar</a>
+
+    </div>
+
 </ion-view>
